@@ -18,6 +18,15 @@
   <meta property="og:description" content="venv like a pro" />
   <meta property="og:site_name" content="venv cheatsheet" />
 
+  <script type="text/javascript">
+    function windowsVersion() {
+      if (navigator.platform.indexOf('Win') > -1) {
+        document.getElementsByTagName('h1')[0].innerHTML = "python3 -m venv .venv<br>.venv/bin/activate.bat"
+      }
+    }
+    window.onload = windowsVersion;
+  </script>
+
   <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
   <body class="w-100 sans-serif">
 
